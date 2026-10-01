@@ -5,7 +5,7 @@ html {
 }
 
 :root {
-    --page-art: url("../resources/images/header-banner.png");
+    --page-art: url("./resources/images/header-banner.png");
     --page-art-size: 120%;
     --page-art-position: right 35%;
 }
