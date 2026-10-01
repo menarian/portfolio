@@ -139,3 +139,41 @@ nav a:hover {
 .home-page #home {
     text-decoration: underline;
 }
+
+/* Main */
+
+main {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5px auto;
+}
+
+main img {
+    height: 185px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+.gallery-list {
+    display: block;
+}
+
+.gallery-list figure {
+    display: inline-block;
+    height: 185px;
+    margin: 10px auto;
+}
+
+.gallery-list figcaption a {
+    color: black;
+}
+
+figcaption {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
