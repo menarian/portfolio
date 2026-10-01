@@ -1,6 +1,18 @@
 html {
     font-family: Roboto, sans-serif;
     font-size: 16px;
+    animation: fade-in 700ms ease-in-out both;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translate(5px, 10px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
 }
 
 /* Header */
@@ -12,6 +24,11 @@ header {
     background-color: #1e93c9;
     border: 1px solid black;
     border-radius: 5px;
+    background-image: url("/Users/menarian/Coding/GitHub/Repos/portfolio/resources/images/header-banner.png");
+    background-clip: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 35%;
 }
 
 header .title img {
@@ -34,6 +51,7 @@ header .title img {
 .title h3 {
     margin: 0;
     margin-bottom: 3px;
+    color: white;
 }
 
 .socials {
@@ -44,6 +62,7 @@ header .title img {
     border: 1px solid black;
     border-radius: 7px;
     background-color: whitesmoke;
+    opacity: 80%;
     margin: 5px;
     height: 50px;
 }
@@ -104,5 +123,13 @@ nav a {
 
 nav a:hover {
     color:#1e93c9;
-    transform: scale(1.2);
+    transform: scale(1.1);
+}
+
+.gallery-page #gallery {
+    text-decoration: underline;
+}
+
+.home-page #home {
+    text-decoration: underline;
 }
