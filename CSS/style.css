@@ -35,7 +35,6 @@ header {
     background-size: var(--page-art-size);
     background-repeat: no-repeat;
     background-position: var(--page-art-position);
-    background-attachment: fixed;
 }
 
 header .title img {
