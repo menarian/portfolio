@@ -4,6 +4,12 @@ html {
     animation: fade-in 700ms ease-in-out both;
 }
 
+:root {
+    --page-art: url("../resources/images/header-banner.png");
+    --page-art-size: 120%;
+    --page-art-position: right 35%;
+}
+
 @keyframes fade-in {
     from {
         opacity: 0;
@@ -24,11 +30,12 @@ header {
     background-color: #1e93c9;
     border: 1px solid black;
     border-radius: 5px;
-    background-image: url("/Users/menarian/Coding/GitHub/Repos/portfolio/resources/images/header-banner.png");
     background-clip: border-box;
-    background-size: cover;
+    background-image: var(--page-art);
+    background-size: var(--page-art-size);
     background-repeat: no-repeat;
-    background-position-y: 35%;
+    background-position: var(--page-art-position);
+    background-attachment: fixed;
 }
 
 header .title img {
